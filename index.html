@@ -6,8 +6,9 @@
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
     <!-- ./fonts -->
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
     <style>
         * {
             -webkit-font-smoothing: antialiased;
@@ -21,7 +22,6 @@
         }
 
         body {
-            width: 21cm;
             height: 100%;
             min-height: 29.7cm;
             position: relative;
@@ -29,7 +29,7 @@
             padding: 0 0;
             color: #333;
             line-height: 22px;
-            font: 12px "Helvetica", Arial;
+            font: 17px 'Roboto', sans-serif;
             font-style: normal
         }
 
@@ -41,12 +41,13 @@
             width: 100%;
             font-style: normal;
             font-size: 21px;
-
+            font-family: 'Tilt Prism', cursive !important;
             letter-spacing: .05em;
             color: #fff;
             margin: 0;
             padding: 35px 70px 15px 70px;
-            font-weight: 600
+            font-weight: 600;
+            color: #ffc107;
         }
 
         h1 span {
@@ -63,10 +64,11 @@
 
         h2 {
             letter-spacing: .1em;
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 600;
             margin: 0;
-            padding: 0
+            padding: 0;
+            font-family: 'Tilt Prism', cursive !important;
         }
 
         h3 {
@@ -96,12 +98,12 @@
 
         .sections {
             top: 0;
-            left: 275px;
-            padding-top: 20px;
+            left: 285px;
+            padding-top: 10px;
             padding-left: 20px;
             padding-right: 20px;
             position: relative;
-            width: 520px;
+            width: 720px;
             min-height: 500px;
             background: #fff
         }
@@ -137,11 +139,11 @@
             width: 100%;
             z-index: 99;
             margin: 0;
-            font-weight: 600;
+            font-weight: 800;
             background: #fff;
             padding: 19px 0 0 3px;
             border-top: 1px solid #d2d2d2;
-            page-break-inside: avoid
+            page-break-inside: avoid;
         }
 
         .section--title span {
@@ -182,7 +184,7 @@
             display: block;
             list-style: none;
             padding: 0;
-            margin: 0
+            margin: 0;
         }
 
         .section--list.skills {
@@ -198,8 +200,10 @@
             display: block;
             position: relative;
             list-style: none;
-            padding: 0 0 0 4px;
-            margin: 0
+            padding: 4px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 2px solid gray;
         }
 
         .section--item.skills {
@@ -222,14 +226,16 @@
         .skills--label {
             display: inline-block;
             width: 175px;
-            margin: 0 0 0 -5px
+            margin: 0 0 0 -5px;
+            font-size: 15px;
         }
 
         .skills--stars {
             display: inline-block;
             position: absolute;
             top: 50%;
-            margin-top: -7px
+            margin-top: -7px;
+            font-size: 16px;
         }
 
         .skills--stars svg {
@@ -242,7 +248,7 @@
 
         .section--date {
             position: absolute;
-            right: 0;
+            right: 5px;
             top: 12px;
             width: 125px;
             text-align: right;
@@ -272,7 +278,8 @@
         }
 
         .section--content p {
-            display: block
+            display: block;
+            font-size: 14px;
         }
 
         .section--content ol,
@@ -296,7 +303,7 @@
         }
 
         .section--content ol {
-            padding-left: 14px
+            padding-left: 14px;
         }
 
         .section--content-single-textarea {
@@ -371,9 +378,9 @@
             z-index: 99;
             display: inline-block;
             padding: 0;
-            margin: -65px 0 0 63px;
-            height: 115px;
-            width: 115px;
+            margin: -65px 0 0 43px;
+            height: 145px;
+            width: 145px;
             border-radius: 50%;
             -webkit-background-size: cover !important;
             background-size: cover !important;
@@ -382,11 +389,12 @@
         }
 
         .sidebar--data {
-            display: block
+            display: block;
         }
 
         .sidebar--title {
             font-style: normal;
+            font-size: larger;
             position: relative;
             width: calc(100% + 20px);
             padding: 5px 0 5px 20px;
@@ -424,7 +432,7 @@
         }
 
         .sidebar--label {
-            font-weight: 600
+            font-weight: 800
         }
 
         .sidebar--list {
@@ -438,13 +446,13 @@
             display: block;
             list-style: none;
             position: relative;
-            font-size: 12px;
+            font-size: 14px;
             margin: 0;
             padding: 0 5px 5px 0
         }
 
         .sidebar--item.sidebar--item-personal {
-            padding: 0 5px 5px 23px
+            padding: 0 7px 7px 25px
         }
 
         .sidebar--item.sidebar--item-interest {
@@ -472,7 +480,7 @@
             top: 2px;
             left: -8px;
             position: absolute;
-            height: 15px
+            height: 18px
         }
 
         .sidebar--item-text {
@@ -816,11 +824,22 @@
         html[lang="ara"] body {
             font-family: "Noto Sans Arabic", sans-serif;
         }
+        .signi{
+            font-family: 'Dancing Script', cursive;
+            font-style: italic;
+            font-size: 12px;
+            position: absolute;
+            left: 45%;
+            z-index: 100;
+            top: 45px;
+            color: #ffc107;
+            box-shadow: inset;
+        }
     </style>
 
 </head>
 
-<body class="c--505476 ">
+<body class="">
 
     <div class="sidebar--bg"></div>
 
@@ -831,8 +850,10 @@
     <aside class="sidebar">
 
         <div class="avatar__bg">
-            <h1>Nemanja Kostic</h1>
+            <h1>Nemanja Kostić</h1>
+            
         </div>
+        <div><span class="signi">Kole</span></div>
 
 
 
@@ -866,8 +887,7 @@
                         </path>
                     </svg>
                     <span class="sidebar--label">Phone</span><br>
-                    <span dir="ltr">0642258642</span>
-                    Belgrade
+                    <span dir="ltr">+381 642258642</span>
                 </li>
 
 
@@ -964,7 +984,8 @@
                             nbgteam.com, Belgrade </div>
                     </div>
                     <div class="section--content">
-                        <p>one project of rebilling from old code to new one for one e-commerce site</p>
+                        <p>Upgraded an e-commerce site by moving from old code to a new one, improving performance and features.</p>
+                        <p>Tools: Codeigniter, jQuery, MySql, SVN</p>
                     </div>
                 </li>
                 <li class="section--item">
@@ -978,9 +999,8 @@
                             digitalflos.com, Beograd </div>
                     </div>
                     <div class="section--content">
-                        <p>We had few Laravel and Wordpress sites to maintain. We built a few more e-commerce sites from
-                            scratch and one for warehouse where I learn how to make application for mobile phones in
-                            React-native</p>
+                        <p>Managed and maintained several Laravel and WordPress sites while also spearheading the development of additional e-commerce platforms from the ground up. Notably, I led the creation of a mobile app that can scans barcode of products for warehouse management system, where I gained proficiency in crafting mobile applications using React Native.</p>
+                        <p>Tools: Laravel, WordPress, React Native, jQuery, MySql, Bitbucket</p>
                     </div>
                 </li>
                 <li class="section--item">
@@ -995,6 +1015,7 @@
                     </div>
                     <div class="section--content">
                         <p>Working on applications for government institutions and ministries</p>
+                        <p>Tools: ColdFusion, jQuery, React, React Native, MS SQL, SVN</p>
                     </div>
                 </li>
                 <li class="section--item">
@@ -1008,8 +1029,8 @@
                             ThinkIT.rs, Belgrade </div>
                     </div>
                     <div class="section--content">
-                        <p>Application for Charterers to management and control every aspect between customers and
-                            barges</p>
+                        <p>Working on an intuitive application tailored for charterers, enabling comprehensive management and seamless control over all interactions between customers and barges for <a href="https://suneti.nl/en/about-us/">Suneti online solutions</a> company with great expertise in the inland shipping trade</p>
+                        <p>Tools: Laravel, jQuery, PostgreSQL, Git</p>
                     </div>
                 </li>
             </ol>
@@ -1103,7 +1124,7 @@
 
                 <li class="section--item skills">
                     <div class="skills--label">
-                        <h3>SQL</h3>
+                        <h3>Databases</h3>
                     </div>
                     <div class="skills--stars">
                         <div class="skills__list">
@@ -1116,7 +1137,7 @@
 
                 <li class="section--item skills">
                     <div class="skills--label">
-                        <h3>Linux</h3>
+                        <h3>Systems</h3>
                     </div>
                     <div class="skills--stars">
                         <ul class="skills__list">
@@ -1146,7 +1167,7 @@
                         <div class="skills__list">
                             <span class="">VS code,</span>
                             <span class="">Postman,</span>
-                            <span class="">Android studio</span>
+                            <span class="">Android studio,</span>
                             <span class="">Workbentch</span>
                         </div>
                     </div>
